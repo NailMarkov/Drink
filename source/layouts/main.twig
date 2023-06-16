@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Drink2Go</title>
+		<link rel="stylesheet" href="css/style.min.css">
+		<link rel="preload" href="fonts/Montserrat-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+		<link rel="preload" href="fonts/Montserrat-Medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+		<link rel="preload" href="fonts/Montserrat-SemiBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+		<link rel="preload" href="fonts/Montserrat-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+		{# <link rel="icon" href="favicon.ico">
+		<link rel="icon" href="favicon32.svg" type="image/svg+xml">
+		<link rel="manifest" href="manifest.webmanifest"> #}
+	</head>
+	<body class="page__body">
+		{% include "blocks/header/header.twig" %}
+
+		{% block main %}
+			<main>
+				<h2>Пустая страница</h2>
+			</main>
+		{% endblock %}
+
+		{% include "blocks/footer/footer.twig" %}
+
+		{% if isDev %}
+			<script>
+				window.pixelperfect = { breakpoints: [320, 768, 1440], folder: '' };
+			</script>
+			<script src="https://efiand.github.io/pixelperfect-tool/pixelperfect.min.js"></script>
+		{% endif %}
+		<script src="js/script.min.js"></script>
+	</body>
+</html>
